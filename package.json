@@ -7,7 +7,8 @@
     "feedparser": "^1.1.5",
     "method-override": "~2.0.2",
     "mongoose": "~3.8.0",
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "bower": "^1.5.2"
   },"scripts": {
     "postinstall": "bower cache clean && bower install"
   }
