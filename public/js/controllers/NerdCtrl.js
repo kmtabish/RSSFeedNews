@@ -3,7 +3,7 @@ angular.module('NerdCtrl', []).controller('NerdController', function($scope, $ht
 	$scope.tagline = 'Nothing beats a pocket protector!';
 	$http({
 	  method: 'GET',
-	  url: 'https://rssfeednews.herokuapp.com/feedBBC'
+	  url: 'http://localhost:1234/feedBBC'
 	}).then(function successCallback(response) {
 		$scope.data = response.data.data.items;
 
