@@ -1,0 +1,17 @@
+<div class="jumbotron text-center">
+	<h1>BBC world</h1>
+
+	<!-- <p>{{ tagline }}</p> -->
+
+	<div class="" ng-repeat="news in data">
+		<h2>{{news.title}}</h2>
+		<img ng-src="{{news.image.url}}" width="500px" height="400px" alt="" />
+		<p>
+			{{news.summary}}
+		</p>
+		<p>
+			<a ng-href="{{news.link}}">Detail</a>
+		</p>
+	</div>
+
+</div>
