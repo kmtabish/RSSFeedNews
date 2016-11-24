@@ -1,6 +1,5 @@
-angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-
-	$routeProvider
+angular.module('sampleApp', ['ngRoute']).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+		$routeProvider
 
 		// home page
 		.when('/', {
@@ -18,6 +17,6 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'GeekController'
 		});
 
-	$locationProvider.html5Mode(true);
+	//$locationProvider.html5Mode(true);
 
 }]);

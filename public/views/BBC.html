@@ -5,7 +5,8 @@
 
 	<div class="" ng-repeat="news in data">
 		<h2>{{news.title}}</h2>
-		<img ng-src="{{news.image.url}}" width="500px" height="400px" alt="" />
+		 <cropped-image ng-if="news.image.url" src="news.image.url" width="400" height="250" imgsrc="news.image.url"></cropped-image>
+		<!--<img src="{{news.image.url}}" width="500px" height="400px" alt="" />-->
 		<p>
 			{{news.summary}}
 		</p>
