@@ -3,7 +3,7 @@ module.exports = {
   var FeedParser = require('feedparser')
     , request = require('request');
   //
-  var feedReq = request({url:'http://feeds.bbci.co.uk/news/world/rss.xml',method:'GET', headers: { 'user-Agent': 'request'}})
+  var feedReq = request({url:'http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml?edition=uk',method:'GET', headers: { 'user-Agent': 'request'}})
     , feedparser = new FeedParser()
     , meta = null
     , items = [];
