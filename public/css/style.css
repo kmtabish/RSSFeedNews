@@ -1,1 +1,50 @@
 body { padding-top:30px; }
+
+ul .test{
+    font-size: 0;
+    list-style: none;
+    width: 100%;
+}
+ul li{
+   display: inline-block;
+    width: 100%;
+}
+ul li .hello {
+    opacity: 0.5;
+    width: 100%;
+}
+ul li.feature {
+    background: blue;
+    width: 100%;
+}
+ul li.two {
+    background: red;
+}
+ul li.three {
+    background: yellow;
+}
+@media (max-width: 640px) {
+    ul li {
+        width: 100%;
+    }
+    ul li.feature {
+        width: 100%;
+    }
+}
+
+h2{    position: absolute;
+    color: white;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    margin: 50px;
+}
+
+.textOverlayDesc{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    color: white;
+    margin: 20%;
+}

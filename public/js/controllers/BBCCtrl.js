@@ -1,9 +1,11 @@
 angular.module('sampleApp').controller('BBCController', function($scope, $http) {
 
+	$scope.innterHeight = window.innerHeight/3;
+	$scope.innterWidth = window.innerWidth/3;
 	$scope.tagline = 'Nothing beats a pocket protector!';
 	$http({
 	  method: 'GET',
-	  url: 'http://localhost:1234/feedBBC'
+	  url: 'https://rssfeednews.herokuapp.com/feedBBC'
 	}).then(function successCallback(response) {
 		$scope.data = response.data.data.items;
 
@@ -16,4 +18,7 @@ angular.module('sampleApp').controller('BBCController', function($scope, $http) 
 	    // or server returns response with an error status.
 	  });
 
+	$scope.openDetail = function(link){
+		console.log("link Open:", link)
+	}
 });
