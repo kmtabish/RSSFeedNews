@@ -2,12 +2,12 @@
 	<h1>BBC Entertainment</h1>
 
 	<!-- <p>{{ tagline }}</p> -->
-	<ul class= 'test' ng-repeat="news in data">
-		<li class="{{$index%3 == 0 ? 'feature testli' : $index%2==0?'two testli':'three testli' }}" ng-click="openDetail(news.link)">
-			<h2>{{news.title}}</h2>
-			<p class="textOverlayDesc">
-				{{news.summary}}
-			</p>
+	<ul class= 'col-sm-12 test' ng-repeat="news in data">
+		<li class="{{$index%3 == 0 ? 'feature hello' : $index%2==0?'two hello':'three hello' }}" ng-click="openDetail(news.link)">
+			<p>{{news.title}}</p>
+			<!--<p >-->
+				<!--{{news.summary}}-->
+			<!--</p>-->
 			<cropped-image class="hello" ng-if="news.image.url" src="news.image.url" width="{{innterWidth*2.26}}" height="{{innterWidth - innterWidth/4}}" imgsrc="news.image.url"></cropped-image>
 
 			</li>
