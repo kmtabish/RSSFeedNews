@@ -1,4 +1,13 @@
 <div>
 
-  {{innterHeight}}
+  <!--{{innterHeight}}-->
+<div ng-if="messageList.length">
+  <ul class="chatUL" >
+    <li ng-repeat="message in messageList | orderBy:-message.createdAt "><span><b>{{message.message}}</b> - <i>{{message.sender.userId}}</i></span></li>
+  </ul>
+</div>
+  <div class="chatScreen" >
+  <input type="text" class="form-control" placeholder="Your Message..." ng-model="message">
+  <button type="submit" class="btn btn-default" ng-click="send()">Submit</button>
+  </div>
 </div>

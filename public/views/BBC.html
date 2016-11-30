@@ -11,9 +11,15 @@
 	 <!-- -->
 	<!--</ul>-->
 
-
-	<div >
-	<div owl-carousel="data" owl-options="BBC.owl.options">
+	<div class="loader" ng-if="!data.length">
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+	</div>
+	<div ng-if="data.length">
+	<div owl-carousel="data" owl-options="BBC.owl.options" >
 		<div class="item">
 			<!--<img ng-src="item.image.url">-->
 			<ul class= 'col-sm-12 test'>
