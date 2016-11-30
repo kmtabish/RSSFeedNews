@@ -18,7 +18,7 @@ angular.module('sampleApp').controller('BBCController', function($scope, $http) 
 	$scope.tagline = 'Nothing beats a pocket protector!';
 	$http({
 	  method: 'GET',
-	  url: 'http://localhost:1234/feedBBC'
+	  url: 'https://rssfeednews.herokuapp.com/feedBBC'
 	}).then(function successCallback(response) {
 		$scope.data = response.data.data.items;
 
