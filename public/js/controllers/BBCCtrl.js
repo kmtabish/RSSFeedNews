@@ -1,7 +1,20 @@
 angular.module('sampleApp').controller('BBCController', function($scope, $http) {
+	var BBC = this;
+	BBC.owl = {
+		items: ["item 1", "item 2"],
+		options: {
+			loop: true,
+			nav: false
+		}
+	};
 
-	$scope.innterHeight = window.innerHeight/3;
-	$scope.innterWidth = window.innerWidth/3;
+	console.log(BBC.owl.items)
+	//$scope.$digest();
+	//$scope.innterHeight = window.innerHeight/3;
+	//$scope.innterWidth = window.innerWidth/3;
+
+	$scope.innterHeight = window.innerHeight;
+	$scope.innterWidth = window.innerWidth;
 	$scope.tagline = 'Nothing beats a pocket protector!';
 	$http({
 	  method: 'GET',
@@ -21,4 +34,6 @@ angular.module('sampleApp').controller('BBCController', function($scope, $http) 
 	$scope.openDetail = function(link){
 		console.log("link Open:", link)
 	}
+
+
 });

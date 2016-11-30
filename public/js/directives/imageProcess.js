@@ -19,7 +19,7 @@ angular.module('sampleApp')
               element.css('backgroundPosition', 'center center');
               element.css('backgroundRepeat', 'no-repeat');
               element.css('backgroundImage', "url('" + scope.imgsrc + "')");
-              console.log("sssss", attrs)
+              element.css('background-size: ', "cover");
 
           }
       }
