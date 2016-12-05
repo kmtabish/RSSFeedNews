@@ -4,19 +4,21 @@ module.exports = {
     , request = require('request');
   //
   var feedReq = request({url:'http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml?edition=uk',method:'GET', headers: { 'user-Agent': 'request'}})
+  var feedReqFrontPage = request({url:'http://feeds.bbci.co.uk/news/rss.xml?edition=uk',method:'GET', headers: { 'user-Agent': 'request'}})
     , feedparser = new FeedParser()
     , meta = null
     , items = [];
 
-  feedReq.on('error', function (error) {
+    feedReqFrontPage.on('error', function (error) {
     console.error(error);
     res.status(404).end(JSON.stringify(error));
   });
-  feedReq.on('response', function (res) {
+    feedReqFrontPage.on('response', function (res) {
     var stream = this;
     if (res.statusCode != 200) return this.emit('error', new Error('Bad status code'));
     stream.pipe(feedparser);
   });
+
   feedparser.on('error', function (err) {
     console.error(err);
   });

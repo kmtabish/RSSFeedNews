@@ -14,12 +14,20 @@ angular.module('sampleApp')
 
               var width = attrs.width;
               var height = attrs.height;
+              //element.css(
+              //  'background', '#010101 url('
+              //  + scope.imgsrc
+              //  + ')no-repeat fixed top center');
+              element.css('background-image', "url('" + scope.imgsrc + "')");
+              element.css('display: ', "inline-block");
               element.css('width', width + "px");
               element.css('height', height + "px");
-              element.css('backgroundPosition', 'center center');
+              element.css('background-position', 'center center');
               element.css('backgroundRepeat', 'no-repeat');
-              element.css('backgroundImage', "url('" + scope.imgsrc + "')");
               element.css('background-size: ', "cover");
+              element.css('margin: ', "auto");
+              element.css('overflow: ', "auto");
+
 
           }
       }

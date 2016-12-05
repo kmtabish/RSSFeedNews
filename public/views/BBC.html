@@ -10,7 +10,40 @@
 			<!--</li>-->
 	 <!-- -->
 	<!--</ul>-->
+	<nav class="main-menu">
+		<ul>
+			<li>
+				<a href="#">
+					<i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Home
+                        </span>
+				</a>
 
+			</li>
+			<li class="has-subnav">
+				<a href="#">
+					<i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
+                        <span class="nav-text">
+                            All News
+                        </span>
+				</a>
+
+			</li>
+
+		</ul>
+
+		<!--<ul class="logout">-->
+			<!--<li>-->
+				<!--<a href="#">-->
+					<!--<i class="fa fa-power-off fa-2x"></i>-->
+                        <!--<span class="nav-text">-->
+                            <!--Logout-->
+                        <!--</span>-->
+				<!--</a>-->
+			<!--</li>-->
+		<!--</ul>-->
+	</nav>
 	<div class="loader" ng-if="!data.length">
 		<div class="dot"></div>
 		<div class="dot"></div>
@@ -22,11 +55,13 @@
 	<div owl-carousel="data" owl-options="BBC.owl.options" >
 		<div class="item">
 			<!--<img ng-src="item.image.url">-->
-			<ul class= 'col-sm-12 test'>
+			<ul class= 'test'>
 				<li class="{{$index%3 == 0 ? 'feature hello' : $index%2==0?'two hello':'three hello' }}" ng-click="openDetail(news.link)">
 					<p>{{item.title}}</p>
+					<!--<p>{{item.summary}}</p>-->
 
-					<cropped-image class="hello" ng-if="item.image.url" ng-src="item.image.url" width="{{innterWidth}}" height="{{innterHeight}}" imgsrc="item.image.url"></cropped-image>
+					<img class="hello className" ng-if="item.image.url" width="{{innterWidth}}" height="{{innterHeight}}" src="{{item.image.url}}" />
+					<!--<cropped-image class="hello" ng-if="item.image.url" ng-src="item.image.url" width="{{innterWidth}}" height="{{innterHeight}}" imgsrc="item.image.url"></cropped-image>-->
 
 				</li>
 
