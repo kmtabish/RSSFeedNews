@@ -43,7 +43,7 @@ p{    position: absolute;
     left: 10px;
     right: 10px;
     margin: 0px;
-    bottom: 40px;
+    bottom: 15%;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -311,4 +311,16 @@ nav.main-menu li.active>a,
     font-style: normal;
     font-weight: 300;
     src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+
+span{
+    position: absolute;
+    color: white;
+    z-index: 5;
+    left: 10px;
+    right: 10px;
+    margin: 0px;
+    bottom: 3%;
+    font-family: 'Ubuntu', sans-serif;
 }

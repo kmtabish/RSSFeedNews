@@ -58,9 +58,10 @@
 			<ul class= 'test'>
 				<li class="{{$index%3 == 0 ? 'feature hello' : $index%2==0?'two hello':'three hello' }}" ng-click="openDetail(news.link)">
 					<p>{{item.title}}</p>
-					<!--<p>{{item.summary}}</p>-->
 
-					<img class="hello className" ng-if="item.image.url" width="{{innterWidth}}" height="{{innterHeight}}" src="{{item.image.url}}" />
+					<span>{{item.summary}}</span>
+
+					<img class="hello className" ng-if="item.image.url" width="{{innterWidth}}" height="{{innterHeight}}" ng-src="{{item.image.url}}" />
 					<!--<cropped-image class="hello" ng-if="item.image.url" ng-src="item.image.url" width="{{innterWidth}}" height="{{innterHeight}}" imgsrc="item.image.url"></cropped-image>-->
 
 				</li>
