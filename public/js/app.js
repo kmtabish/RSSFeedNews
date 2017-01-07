@@ -9,10 +9,10 @@ angular.module('sampleApp', ['ngRoute', 'angular-owl-carousel'])
       controller: 'MainController'
     })
 
-    .when('/bbc', {
-      templateUrl: 'views/BBC.html',
-      controller: 'BBCController',
-      controllerAs:'BBC'
+    .when('/news', {
+      templateUrl: 'views/NEWS.html',
+      controller: 'NEWSController',
+      controllerAs:'NEWS'
     })
 
     .when('/ndtv', {
@@ -25,7 +25,7 @@ angular.module('sampleApp', ['ngRoute', 'angular-owl-carousel'])
       controller: 'TestChatController'
     });
 
-  $locationProvider.html5Mode(true);
+  //$locationProvider.html5Mode(true);
 
 }])
 

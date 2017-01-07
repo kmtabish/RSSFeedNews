@@ -2,8 +2,9 @@
 <html  lang="en-us" ng-app="sampleApp">
 <head>
 	<meta charset="UTF-8">
-	<base href="/">
+	<!--<base href="/">-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline';">
 
 	<title>RSS FEED NEWS</title>
 
@@ -22,6 +23,7 @@
 	<script src="libs/sendbird/SendBird.min.js"></script>
 
 	<script src="libs/angular-route/angular-route.min.js"></script>
+	<script src="libs/async/dist/async.js"></script>
 
 	<script src="js/app.js"></script>
 
@@ -32,7 +34,7 @@
 	<script src="js/assets/js/angular-owl-carousel.js"></script>
 
 	<script src="js/controllers/MainCtrl.js"></script>
-	<script src="js/controllers/BBCCtrl.js"></script>
+	<script src="js/controllers/NEWSCtrl.js"></script>
 	<script src="js/services/BBCService.js"></script>
 	<script src="js/controllers/NDTVCtrl.js"></script>
 	<script src="js/services/NDTVService.js"></script>

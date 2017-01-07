@@ -9,6 +9,7 @@ module.exports = function(app) {
 	// route to handle all angular requests
 	app.get('/feedBBC',readFeed.getBBC);
 	app.get('/feedMashable',readFeed.getMashable);
+	app.get('/feedCNET',readFeed.getCNET);
 	app.post('/testSendBird',function(req, res){
 		console.log("SENDBIRD", req.body)
 		res.end();

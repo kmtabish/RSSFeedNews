@@ -4,6 +4,7 @@
   "dependencies": {
     "angular": "latest",
     "angular-route": "latest",
+    "async": "~2.1.4",
     "bootstrap": "latest",
     "sendbird": "~3.0.17"
   }
