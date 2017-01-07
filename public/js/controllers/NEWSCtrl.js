@@ -20,7 +20,7 @@ angular.module('sampleApp').controller('NEWSController', function($scope, $http)
 	var getBBC = function(callback) {
 		$http({
 			method: 'GET',
-			url: 'http://rssfeednews.herokuapp.com/feedBBC'
+			url: 'https://rssfeednews.herokuapp.com/feedBBC'
 		}).then(function successCallback(response) {
 			$scope.dataBBC = response.data.data.items;
 			callback()
@@ -35,7 +35,7 @@ angular.module('sampleApp').controller('NEWSController', function($scope, $http)
 	var getMashable = function(callback) {
 		$http({
 			method: 'GET',
-			url: 'http://rssfeednews.herokuapp.com/feedMashable'
+			url: 'https://rssfeednews.herokuapp.com/feedMashable'
 		}).then(function successCallback(response) {
 			$scope.dataMASH = response.data.data.items;
 			callback()
@@ -54,7 +54,7 @@ angular.module('sampleApp').controller('NEWSController', function($scope, $http)
 	var getCNET = function(callback) {
 		$http({
 			method: 'GET',
-			url: 'http://rssfeednews.herokuapp.com/feedcnet'
+			url: 'https://rssfeednews.herokuapp.com/feedcnet'
 		}).then(function successCallback(response) {
 			$scope.dataCNET = response.data.data.items;
 			callback()
