@@ -9,11 +9,11 @@ var methodOverride = require('method-override');
 
 // config files
 var db = require('./config/db');
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  next();
-});
+//app.use(function (req, res, next) {
+  //res.header("Access-Control-Allow-Origin", "*");
+  //res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  //next();
+//});
 var port = process.env.PORT || 1234; // set our port
 // mongoose.connect(db.url); // connect to our mongoDB database (commented out after you enter in your own credentials)
 
