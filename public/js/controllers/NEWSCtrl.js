@@ -54,7 +54,7 @@ angular.module('sampleApp').controller('NEWSController', function($scope, $http)
 	var getCNET = function(callback) {
 		$http({
 			method: 'GET',
-			url: 'https://rssfeednews.herokuapp.com/feedcnet'
+			url: 'http://rssfeednews.herokuapp.com/feedcnet'
 		}).then(function successCallback(response) {
 			$scope.dataCNET = response.data.data.items;
 			callback()
