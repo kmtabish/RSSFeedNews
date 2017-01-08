@@ -49,7 +49,7 @@ module.exports = {
       function (error) {}
       , { verbose: false, ignoreWhitespace: true }
     );
-    var feedReqFrontPage = request({url:'http://feeds.mashable.com/Mashable',method:'GET', headers: { 'user-Agent': 'request'}})
+    var feedReqFrontPage = request({url:'http://feeds.feedburner.com/TechCrunch/',method:'GET', headers: { 'user-Agent': 'request'}})
       , feedparser = new FeedParser()
       , meta = null
       , items = [];
