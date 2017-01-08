@@ -70,7 +70,7 @@ angular.module('sampleApp').controller('NEWSController', function($scope, $http)
 		});
 	}
 	var concatArray = function(callback){
-		$scope.data = $scope.dataMASH.slice(0,15).concat($scope.dataBBC.slice(0,15)).concat($scope.dataCNET.slice(0,15))
+		$scope.data =$scope.dataBBC.slice(0,15).concat($scope.dataCNET.slice(0,15))
 		callback()
 	}
 	$scope.openDetail = function(link){
@@ -78,7 +78,7 @@ angular.module('sampleApp').controller('NEWSController', function($scope, $http)
 	}
 
 	async.series([
-		getBBC, getMashable, getCNET, concatArray
+		getBBC, getCNET, concatArray
 	]);
 
 });
