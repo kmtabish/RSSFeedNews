@@ -49,7 +49,7 @@ module.exports = {
       function (error) {}
       , { verbose: false, ignoreWhitespace: true }
     );
-    var feedReqFrontPage = request({url:'https://www.cnet.com/rss/all/',method:'GET', headers: { 'user-Agent': 'request'}})
+    var feedReqFrontPage = request({url:'https://www.cnet.com/rss/news/',method:'GET', headers: { 'user-Agent': 'request'}})
       , feedparser = new FeedParser()
       , meta = null
       , items = [];
