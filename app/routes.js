@@ -10,6 +10,7 @@ module.exports = function(app) {
 	app.get('/feedBBC',readFeed.getBBC);
 	//app.get('/feedMashable',readFeed.getMashable);
 	app.get('/feedCNET',readFeed.getCNET);
+	app.get('/feedMashable',readFeed.getMashable);
 	app.post('/testSendBird',function(req, res){
 		console.log("SENDBIRD", req.body)
 		res.end();
